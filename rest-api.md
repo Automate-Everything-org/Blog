@@ -13,7 +13,12 @@ But as the Internet evolved, with more and more users, and more global distribut
 Now back to REST, there are few things about it, we’d like to highlight, a few important characteristics of REST systems below,
 - Client-Server Architecture: Anything happening in the Internet has a user, who wishes to perform an action, such as interacting with a system, say your news feed, weather etc. In this example, the user(or more specifically his/her’s device) is the Client. The system being interacted with, the news site or the weather app, is “hosted” on a server. The interaction b/w the Client and Server happens via the HTTP protocol
 - Statelessness: REST does not belong to anyone state, it belongs to all of us :). Jokes aside .. Wikipedia says
-> “In a client–server interaction, the state is made up of intrinsic state and extrinsic state. Intrinsic state, called resource state, is stored on the server… Extrinsic state, called application state, is stored on each client and consists of information that is dependent on the server’s context…” Woah, a lot of fancy words, let’s unpack that! Statelessness means the server does not store any information about the client’s request. Every HTTP request happens in complete isolation. When the client makes an HTTP request, it includes all information necessary for the server to fulfill that request.
+
+> “In a client–server interaction, the state is made up of intrinsic state and extrinsic state. Intrinsic state, called resource state, is stored on the
+> server… Extrinsic state, called application state, is stored on each client and consists of information that is dependent on the server’s context…”
+
+Woah, a lot of fancy words, let’s unpack that! Statelessness means the server does not store any information about the client’s request.
+Every HTTP request happens in complete isolation. When the client makes an HTTP request, it includes all information necessary for the server to fulfill that request.
 - Cacheability: This means that in REST the intermediaries involved in the request-response model, can cache the information! To give another analogy, when you visit a website for the first time, have you noticed the site takes a couple to load? Subsequent visits to this website, are much faster! This is because of caching! Static resources which are requested as part of a client-server interaction can be cached at various intermediaries, making the response times quicker on any subsequent requests from Client to Server
 There is more, but we’d stop here and you can learn about all facets of REST from this [wiki link](https://en.wikipedia.org/wiki/Representational_state_transfer).
 
